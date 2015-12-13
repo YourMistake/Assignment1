@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity" tools:deviceIds="wear_round">
+
+    <TextView android:id="@+id/txtDisplay" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/txtCounterText"
+        android:layout_above="@+id/btnHit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnHitText"
+        android:id="@+id/btnHit"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@+id/btnClear"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnClearText"
+        android:id="@+id/btnClear"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSaveText"
+        android:id="@+id/btnSave"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/btnHit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+</RelativeLayout>
